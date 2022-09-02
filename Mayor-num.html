@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor</title>
+</head>
+
+<body>
+    <script>
+        const numeros = new Array;
+        for (let i = 0; i < 5; i++) {
+            numeros[i] = parseInt(prompt('Introduzca un número'));
+        }
+
+        let mayor = numeros[0];
+        let contador = 1;
+        while (contador < numeros.length) {
+            if (numeros[contador] > mayor) { mayor = numeros[contador] }
+            contador++
+
+        }
+
+        document.write("El N° mayor es el : " + mayor)
+    </script>
+    <br>
+    <script>
+        const lista = [25, 35, 10, 5, 4];
+
+        let masgrande = lista[0];
+        let num = 1;
+        while (num < lista.length) {
+            if (lista[num] > masgrande) {
+                masgrande = lista[num]
+            }
+            num++
+        }
+
+        document.write("El numero mas grande del 2do array es: " + masgrande)
+
+
+
+    </script>
+</body>
+
+</html>
